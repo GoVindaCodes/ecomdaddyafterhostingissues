@@ -126,7 +126,7 @@ const ProductServices = {
   },
 
   getProductById: async (id) => {
-    return requests.get(`/api/products/${id}`);
+    return requests.get(`/api/product/${id}`);
   },
 
   addProduct: async (body) => {

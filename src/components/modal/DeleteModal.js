@@ -75,11 +75,11 @@ const DeleteModal = ({ allId, id, ids, setIsCheck, category, title, useParamId }
 
       if (location.pathname === "/categories" || category) {
         if (ids) {
-          // console.log('delete modal categorices', ids)
+          console.log('delete modal categorices', ids)
           const res = await CategoryServices.deleteManyCategory({
             ids: ids,
           });
-          //  console.log('delete many category res',res)
+          console.log('delete many category res', res)
           setIsUpdate(true);
           notifySuccess(res.message);
           setIsCheck([]);

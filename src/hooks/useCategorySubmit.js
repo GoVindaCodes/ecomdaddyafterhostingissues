@@ -41,6 +41,8 @@ const useCategorySubmit = (id, data) => {
         icon: imageUrl,
         status: published ? "show" : "hide",
         lang: language,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
       };
 
       // console.log('category submit', categoryData);
